@@ -1,4 +1,8 @@
 
 *~
 *.trash
+
+*-bk
 vendor
+node_modules
+
