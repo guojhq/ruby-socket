@@ -1,8 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    domain_name (0.5.20170404)
-      unf (>= 0.0.5, < 1.0.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -14,22 +12,16 @@ GEM
     faye-websocket (0.10.7)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
-    http-cookie (1.0.3)
-      domain_name (~> 0.5)
     http_parser.rb (0.6.0)
-    mime-types (3.1)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
-    netrc (0.11.0)
-    rest-client (2.0.1)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
-    socketio-client (0.0.3)
-      rest-client
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.3)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
+    json (2.0.4)
+    multi_xml (0.6.0)
+    socket.io-client-simple (1.2.1)
+      event_emitter
+      httparty
+      json
+      websocket-client-simple (~> 0.3.0)
     websocket (1.2.4)
     websocket-client-simple (0.3.0)
       event_emitter
@@ -53,7 +45,7 @@ DEPENDENCIES
   em-websocket-client
   eventmachine
   faye-websocket
-  socketio-client
+  socket.io-client-simple
   websocket-client-simple
   websocket-eventmachine-client
 

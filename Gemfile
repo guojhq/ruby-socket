@@ -7,7 +7,8 @@ gem 'em-websocket-client'
 
 gem 'faye-websocket'
 
-gem 'socketio-client'
+# gem 'socketio-client'
+gem 'socket.io-client-simple'
 
 gem 'websocket-client-simple'
 gem 'websocket-eventmachine-client'
