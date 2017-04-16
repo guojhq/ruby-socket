@@ -5,7 +5,8 @@ require 'websocket-eventmachine-client'
 EM.run do
 
   # ws = WebSocket::EventMachine::Client.connect(:uri => 'ws://localhost:8080') # ruby
-  ws = WebSocket::EventMachine::Client.connect(:uri => 'ws://localhost:3000/socket.io') # node
+  # ws = WebSocket::EventMachine::Client.connect(:uri => 'ws://localhost:3000/socket.io') # node
+  ws = WebSocket::EventMachine::Client.connect(:uri => 'ws://localhost:3002/')
 
   ws.onopen do
     puts "Connected"

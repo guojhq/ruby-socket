@@ -1,8 +1,10 @@
 require 'faye/websocket'
 require 'eventmachine'
 
+port = 3002
+
 EM.run {
-  ws = Faye::WebSocket::Client.new('ws://localhost:3001')
+  ws = Faye::WebSocket::Client.new('ws://localhost:#{port}')
 
   ws.on :open do |event|
     p [:open]
